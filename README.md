@@ -27,19 +27,6 @@ npm start
 - TypeScript
 - Bootstrap (u otra librería/framework que estés utilizando)
 
-## 🖐 Contribuciones
-
-¡Las contribuciones son siempre bienvenidas! Por favor, lee las [directrices de contribución](CONTRIBUTING.md) primero.
-
-## 📃 Licencia
-
-Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
-
-## 🤝 Colaboradores
-
-- [@nombre_usuario1](https://github.com/nombre_usuario1)
-- [@nombre_usuario2](https://github.com/nombre_usuario2)
-- ... (añade todos los miembros del equipo aquí)
 
 ## ⭐ Agradecimientos
 
