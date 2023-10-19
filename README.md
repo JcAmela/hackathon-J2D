@@ -1,27 +1,48 @@
-# PruebaTecnicaHackathonJumpToDigital
+# 🚀 Rick and Morty Explorer - Hackathon Jump 2 Digital 🌌
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+![Banner](https://url-a-tu-banner-personalizado-o-imagen-referente-al-proyecto.png)
 
-## Development server
+Bienvenido al proyecto Rick and Morty Explorer, desarrollado durante la hackathon de Jump 2 Digital. Una plataforma donde puedes explorar y conocer más sobre tus personajes favoritos de la serie.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🌠 Características
 
-## Code scaffolding
+- **Buscar Personajes**: Introduce el nombre y encuentra a tus personajes favoritos.
+- **Información Detallada**: Descubre más sobre la historia y características de cada personaje.
+- **Interfaz Intuitiva**: Navegación sencilla y diseño atractivo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Empezando
 
-## Build
+Para obtener una copia local en funcionamiento, sigue estos sencillos pasos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+\```bash
+git clone https://github.com/JcAmela/hackathon-J2D.git
+cd hackathon-J2D
+npm install
+npm start
+\```
 
-## Running unit tests
+## 🤖 Tecnologías Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular
+- TypeScript
+- Bootstrap (u otra librería/framework que estés utilizando)
 
-## Running end-to-end tests
+## 🖐 Contribuciones
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+¡Las contribuciones son siempre bienvenidas! Por favor, lee las [directrices de contribución](CONTRIBUTING.md) primero.
 
-## Further help
+## 📃 Licencia
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
+
+## 🤝 Colaboradores
+
+- [@nombre_usuario1](https://github.com/nombre_usuario1)
+- [@nombre_usuario2](https://github.com/nombre_usuario2)
+- ... (añade todos los miembros del equipo aquí)
+
+## ⭐ Agradecimientos
+
+- Gracias a Jump 2 Digital por organizar esta hackathon.
+- A toda la comunidad de fans de Rick and Morty por su apoyo y entusiasmo.
+
