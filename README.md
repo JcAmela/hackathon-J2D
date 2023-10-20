@@ -36,7 +36,7 @@ npm start
 
 - **Framework Principal**: Angular 🅰️
 - **Lenguaje de Programación**: TypeScript 📘
-- **Diseño y Estilo**: Bootstrap (o cualquier otra librería/framework que estés utilizando) 🎨
+- **Diseño y Estilo**: Bootstrap 🎨
 <<<<<<< HEAD
 =======
 
