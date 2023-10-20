@@ -4,7 +4,7 @@
 
 ![Banner](./src/assets/banner%20github%20hackathon.png)
 
-🌠 **Descubre el universo de Rick and Morty como nunca antes.** Explora, conoce y sumérgete en la historia de tus personajes favoritos de la serie.
+🌠 **Descubre el universo de Rick and Morty.**
 
 </div>
 
@@ -16,7 +16,7 @@
 
 ## 🚀 Empezando
 
-Sigue estos pasos para tenerlo funcionando en tu máquina local:
+Sigue estos pasos para tenerlo funcionando:
 
 ```bash
 git clone https://github.com/JcAmela/hackathon-J2D.git
