@@ -2,9 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CharacterService } from './../services/characters.service';
 import { Character } from './../interfaces/interface';
 
-/**
- * Componente que lista los personajes.
- */
 @Component({
   selector: 'app-character-list',
   templateUrl: './characterList.component.html',
@@ -12,38 +9,26 @@ import { Character } from './../interfaces/interface';
 })
 export class CharacterListComponent implements OnInit {
 
-  /**
-   * Array para almacenar los personajes recuperados.
-   */
+  // List of characters.
   characters: Character[] = [];
 
-  /**
-   * Constructor que inyecta el servicio de personajes.
-   * @param characterService - Servicio para obtener datos de personajes.
-   */
+  // Injects the character service.
   constructor(private characterService: CharacterService) {}
 
-  /**
-   * Método de ciclo de vida que se ejecuta después de que se crea el componente.
-   */
+  // Initial loading of characters.
   ngOnInit(): void {
     this.loadCharacters();
   }
 
-  /**
-   * Método para cargar los personajes iniciales.
-   */
+  // Fetches characters from the service.
   loadCharacters(): void {
     this.characterService.getCharacters().subscribe((characters: Character[]) => {
       this.characters = characters;
     });
   }
 
-  /**
-   * Método para navegar al detalle del personaje seleccionado.
-   * @param id - ID del personaje seleccionado.
-   */
+  // Navigates to character detail.
   goToDetail(id: number): void {
-    // TODO: Implementa la lógica para navegar al detalle del personaje seleccionado.
+    // TODO: Implement navigation to detail.
   }
 }

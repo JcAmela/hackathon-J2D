@@ -4,22 +4,15 @@ import { Observable, forkJoin } from 'rxjs';
 import { APIResponse, Character } from '../interfaces/interface';
 import { map } from 'rxjs/operators';
 
-/**
- * Servicio para interactuar con la API de Rick and Morty y obtener datos de personajes.
- */
 @Injectable({
   providedIn: 'root'
 })
 export class CharacterService {
 
-  /**
-   * Base URL de la API de Rick and Morty.
-   */
+  // Base URL of the API.
   private BASE_URL = 'https://rickandmortyapi.com/api';
 
-  /**
-   * Lista de nombres de personajes principales a recuperar desde la API.
-   */
+  // List of main character names.
   private mainCharacters = [
     'Rick Sanchez', 'Morty Smith', 'Summer Smith', 'Beth Smith', 'Jerry Smith',
     'Birdperson', 'Mr. Meeseeks', 'Dr. Wong', 'Jessica', 'Principal Vagina',
@@ -27,45 +20,34 @@ export class CharacterService {
     'Unity', 'Tammy Gueterman', 'Sleepy Gary', 'Snuffles', 'Abradolf Lincler'
   ];
 
-  /**
-   * Constructor que inyecta el cliente HTTP.
-   * @param http - Cliente HTTP para realizar solicitudes a la API.
-   */
+  // Injects the HTTP client.
   constructor(private http: HttpClient) {}
 
-  /**
-   * Método que obtiene una lista de personajes basada en mainCharacters desde la API.
-   * @returns Observable<Character[]> - Un observable que emite un arreglo de personajes.
-   */
+  // Fetches a list of characters from the API.
   getCharacters(): Observable<Character[]> {
-    const requests: Observable<APIResponse<Character>>[] = this.mainCharacters.map(character => 
+    // Maps each character name to an HTTP request to search for it in the API.
+    const requests: Observable<APIResponse<Character>>[] = this.mainCharacters.map(character =>
       this.http.get<APIResponse<Character>>(`${this.BASE_URL}/character?name=${character}`)
     );
-  
+
     return forkJoin(requests).pipe(
       map((responses: APIResponse<Character>[]) => {
         const characters: Character[] = [];
         responses.forEach((response, index) => {
-          // Usamos "index" para acceder al nombre del personaje actual desde "mainCharacters"
+          // Retrieves the current character's name based on the index.
           const currentCharacterName = this.mainCharacters[index];
-  
-          // Encuentra el primer personaje que coincide exactamente con el nombre buscado
+
+          // Tries to find an exact match for the character in the results.
           const exactMatch = response.results.find(c => c.name === currentCharacterName);
           if (exactMatch) {
             characters.push(exactMatch);
           } else if (response.results.length > 0) {
-            // Si no hay coincidencia exacta, toma el primer resultado
+            // If there's no exact match, takes the first result.
             characters.push(response.results[0]);
           }
         });
         return characters;
       })
     );
-  
   }
-  
-  
-
-
-  
 }
