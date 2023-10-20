@@ -1,6 +1,6 @@
 # 🚀 Rick and Morty Explorer - Hackathon Jump 2 Digital 🌌
 
-![Banner](https://url-a-tu-banner-personalizado-o-imagen-referente-al-proyecto.png)
+![Banner](./src/assets/banner%20github%20hackathon.png)
 
 Bienvenido al proyecto Rick and Morty Explorer, desarrollado durante la hackathon de Jump 2 Digital. Una plataforma donde puedes explorar y conocer más sobre tus personajes favoritos de la serie.
 
