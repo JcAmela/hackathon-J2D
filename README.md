@@ -31,5 +31,5 @@ npm start
 ## ⭐ Agradecimientos
 
 - Gracias a Jump 2 Digital por organizar esta hackathon.
-- A toda la comunidad de fans de Rick and Morty por su apoyo y entusiasmo.
+
 
