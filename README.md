@@ -32,7 +32,6 @@ npm start
 
 <div align="center">
 
-## 🌟 Agradecimientos
 
 Un agradecimiento especial a **Jump 2 Digital** por brindarnos la oportunidad de crear, innovar y aprender durante esta hackathon. 🚀
 
