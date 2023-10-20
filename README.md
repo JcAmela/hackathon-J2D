@@ -22,7 +22,7 @@
 ## 🚀 Empezando
 
 <<<<<<< HEAD
-Deseoso de probarlo por ti mismo? Sigue estos pasos para tenerlo funcionando en tu máquina local:
+Sigue estos pasos para tenerlo funcionando en tu máquina local:
 =======
 Sigue estos pasos para tenerlo funcionando en local:
 >>>>>>>
@@ -47,8 +47,6 @@ npm start
 
 <<<<<<< HEAD
 ## 🌟 Agradecimientos
-
-=======
 >>>>>>>
 Un agradecimiento especial a **Jump 2 Digital** por brindarnos la oportunidad de crear, innovar y aprender durante esta hackathon. 🚀
 
