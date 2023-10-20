@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 Rick and Morty Explorer - Hackathon Jump 2 Digital 🚀
+# 🌌 Rick and Morty - Hackathon Jump 2 Digital 🚀
 
 ![Banner](./src/assets/banner%20github%20hackathon.png)
 
@@ -23,6 +23,7 @@ git clone https://github.com/JcAmela/hackathon-J2D.git
 cd hackathon-J2D
 npm install
 npm start
+
 ## 🛠 Herramientas y Tecnologías
 
 - **Framework Principal**: Angular 🅰️
