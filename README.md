@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 Rick and Morty Explorer - Hackathon Jump 2 Digital 🚀
+# 🌌 Rick and Morty - Hackathon Jump 2 Digital 🚀
 
 ![Banner](./src/assets/banner%20github%20hackathon.png)
 
