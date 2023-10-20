@@ -3,11 +3,11 @@ import { CharacterService } from './../services/characters.service';
 import { Character } from './../interfaces/interface';
 
 @Component({
-  selector: 'app-character-list',
-  templateUrl: './characterList.component.html',
-  styleUrls: ['./characterList.component.css']
+  selector: 'app-character',
+  templateUrl: './character.component.html',
+  styleUrls: ['./character.component.css']
 })
-export class CharacterListComponent implements OnInit {
+export class CharacterComponent implements OnInit {
 
   // List of characters.
   characters: Character[] = [];
@@ -31,4 +31,5 @@ export class CharacterListComponent implements OnInit {
   goToDetail(id: number): void {
     // TODO: Implement navigation to detail.
   }
+
 }
