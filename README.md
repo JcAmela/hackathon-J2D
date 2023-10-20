@@ -17,7 +17,7 @@
 
 ## 🚀 Empezando
 
-Deseoso de probarlo por ti mismo? Sigue estos pasos para tenerlo funcionando en tu máquina local:
+Sigue estos pasos para tenerlo funcionando en local:
 
 git clone https://github.com/JcAmela/hackathon-J2D.git
 cd hackathon-J2D
