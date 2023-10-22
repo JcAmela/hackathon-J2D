@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { CharacterService } from './../services/characters.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { CharacterService } from '../services/characters.service';
 import { Character } from './../interfaces/interface';
 
 @Component({
@@ -7,29 +7,25 @@ import { Character } from './../interfaces/interface';
   templateUrl: './character.component.html',
   styleUrls: ['./character.component.css']
 })
+
 export class CharacterComponent implements OnInit {
+  @Input() characters: Character[] = [];
+  originalCharacters: Character[] = [];
 
-  // List of characters.
-  characters: Character[] = [];
+  constructor(private characterService: CharacterService) { }
 
-  // Injects the character service.
-  constructor(private characterService: CharacterService) {}
-
-  // Initial loading of characters.
   ngOnInit(): void {
     this.loadCharacters();
   }
 
-  // Fetches characters from the service.
   loadCharacters(): void {
-    this.characterService.getCharacters().subscribe((characters: Character[]) => {
+    this.characterService.getCharacters().subscribe(characters => {
       this.characters = characters;
+      this.originalCharacters = [...characters];
     });
   }
 
-  // Navigates to character detail.
-  goToDetail(id: number): void {
-    // TODO: Implement navigation to detail.
+  onCharactersFiltered(filteredCharacters: Character[]): void {
+    this.characters = filteredCharacters;
   }
-
 }

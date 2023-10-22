@@ -1,19 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CharacterService } from '../../services/characters.service';
 import { Character } from '../../interfaces/interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent implements OnInit {
-  characters: Character[] = [];
 
-  constructor(private characterService: CharacterService) {}
+export class ListComponent implements OnInit {
+  @Input() characters: Character[] = [];
+
+  constructor(private characterService: CharacterService, private router: Router) {}
 
   ngOnInit(): void {
-    this.loadCharacters();
+    if (!this.characters.length) {
+      this.loadCharacters();
+    }
   }
 
   loadCharacters(): void {
@@ -23,6 +27,6 @@ export class ListComponent implements OnInit {
   }
 
   goToDetail(id: number): void {
-    // TODO: Implement navigation to detail.
+    this.router.navigate(['/detail', id]);
   }
 }

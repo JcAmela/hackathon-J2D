@@ -1,0 +1,8 @@
+.container-fluid {
+  background-image: url('./../assets/fondo.jpg');
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el viewport */
+  background-position: center center; /* Centra la imagen */
+  background-attachment: fixed; /* La imagen no se moverá al hacer scroll */
+  background-color: #000; /* Un color de fondo en caso de que la imagen no se cargue o sea transparente en algunas áreas */
+}

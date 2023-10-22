@@ -7,6 +7,7 @@ import { CoreComponent } from './core/core.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterComponent } from './core/character/filter/filter.component';
 import { ListComponent } from './core/character/list/list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,13 @@ import { ListComponent } from './core/character/list/list.component';
       CoreComponent,
       CharacterComponent,
       FilterComponent,
-      ListComponent
+      ListComponent,
+
    ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

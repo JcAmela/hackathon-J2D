@@ -1,1 +1,23 @@
-<p>TODO filter</p>
+<div class="filter-container">
+  <!-- Ensure using ngModel bidirectionally -->
+  <input type="text" placeholder="Search by name..." [(ngModel)]="searchTerm" (keyup.enter)="filterCharacters()" class="search-input">
+
+  <!-- Using ngModel instead of [value] and handling change with (change) -->
+  <select [(ngModel)]="statusFilter" (keyup.enter)="filterCharacters()" class="dropdown-filter">
+    <option value="">All statuses</option>
+    <option value="Alive">Alive</option>
+    <option value="Dead">Dead</option>
+    <option value="unknown">Unknown</option>
+  </select>
+
+  <!-- Using ngModel bidirectionally for genderFilter -->
+  <select [(ngModel)]="genderFilter" (keyup.enter)="filterCharacters()" class="dropdown-filter">
+    <option value="">All genders</option>
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+    <option value="Genderless">Genderless</option>
+  </select>
+
+  <!-- Search Button -->
+  <button (click)="filterCharacters()" class="filter-btn">Search</button>
+</div>

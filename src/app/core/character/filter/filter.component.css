@@ -1,0 +1,70 @@
+/* Estilo general del contenedor de filtros */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Un blanco translúcido */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el encabezado */
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #f8f8f2; /* Color claro que contrasta con el fondo oscuro */
+}
+
+/* Estilo para el input de búsqueda */
+.search-input {
+  flex: 2;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ffd700; /* Un tono dorado para resaltar el enfoque */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); /* Sombra dorada suave alrededor del input */
+}
+
+/* Estilo para los select (dropdown) */
+.dropdown-filter {
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #282a36; /* Un fondo oscuro que combina con el tema */
+  color: #f8f8f2;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-filter:focus {
+  background-color: #44475a; /* Un tono más claro al enfocarse */
+}
+
+/* Estilo para el botón de Buscar */
+.filter-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5555; /* Un tono de rojo para llamar la atención */
+  color: #f8f8f2;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #ff4444; /* Un tono de rojo un poco más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de levitación al pasar el mouse */
+}
+
+.filter-btn:active {
+  transform: translateY(0); /* Efecto de presión al hacer clic */
+}
