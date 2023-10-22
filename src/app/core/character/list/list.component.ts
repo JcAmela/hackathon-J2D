@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 
 export class ListComponent implements OnInit {
   @Input() characters: Character[] = [];
-
+  isLoading: boolean = true;
   constructor(private characterService: CharacterService, private router: Router) {}
 
   ngOnInit(): void {

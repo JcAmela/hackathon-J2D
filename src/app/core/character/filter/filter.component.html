@@ -1,6 +1,6 @@
 <div class="filter-container">
   <!-- Ensure using ngModel bidirectionally -->
-  <input type="text" placeholder="Search by name..." [(ngModel)]="searchTerm" (keyup.enter)="filterCharacters()" class="search-input">
+  <input type="text" #searchInputElement placeholder="Search by name..." [(ngModel)]="searchTerm" (keyup.enter)="filterCharacters()" class="search-input">
 
   <!-- Using ngModel instead of [value] and handling change with (change) -->
   <select [(ngModel)]="statusFilter" (keyup.enter)="filterCharacters()" class="dropdown-filter">

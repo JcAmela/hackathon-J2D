@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilterComponent } from './core/character/filter/filter.component';
 import { ListComponent } from './core/character/list/list.component';
 import { FormsModule } from '@angular/forms';
+import { ParagraphComponent } from './core/character/paragraph/paragraph.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
       CharacterComponent,
       FilterComponent,
       ListComponent,
+      ParagraphComponent,
 
    ],
   imports: [

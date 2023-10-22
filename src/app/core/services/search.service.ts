@@ -11,7 +11,7 @@ export class CharactersService {
 
   constructor(private http: HttpClient) { }
 
-  // Función para obtener personajes basados en filtros
+  // Function to get characters based on filters
   getCharactersByFilter(filters: any): Observable<any> {
     let filterUrl = this.baseUrl + '?';
     for (const key in filters) {

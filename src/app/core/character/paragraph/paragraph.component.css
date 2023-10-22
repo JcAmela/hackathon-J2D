@@ -1,0 +1,36 @@
+/* PARAGRAPH STYLE */
+p {
+  color: #252525;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 2rem 0;
+  text-align: justify;
+  line-height: 1.7;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 2rem;
+  background-color: rgba(249, 249, 249, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+p:before {
+  content: "“";
+  font-size: 4rem;
+  color: #02E1FF;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0.4;
+}
+
+p:after {
+  content: "”";
+  font-size: 4rem;
+  color: #02E1FF;
+  position: absolute;
+  right: 10px;
+  opacity: 0.4;
+}

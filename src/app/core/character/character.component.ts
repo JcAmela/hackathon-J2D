@@ -7,10 +7,11 @@ import { Character } from './../interfaces/interface';
   templateUrl: './character.component.html',
   styleUrls: ['./character.component.css']
 })
-
 export class CharacterComponent implements OnInit {
   @Input() characters: Character[] = [];
   originalCharacters: Character[] = [];
+  searchPerformed: boolean = false;
+  userInteracted: boolean = false;
 
   constructor(private characterService: CharacterService) { }
 
@@ -25,7 +26,9 @@ export class CharacterComponent implements OnInit {
     });
   }
 
-  onCharactersFiltered(filteredCharacters: Character[]): void {
-    this.characters = filteredCharacters;
+  onCharactersFiltered(data: { characters: Character[], isEmpty: boolean }): void {
+    this.characters = data.characters;
+    this.searchPerformed = !data.isEmpty;
+    this.userInteracted = !data.isEmpty;
   }
 }

@@ -1,24 +1,36 @@
-/* Estilo general del contenedor de filtros */
+/*
+============================================
+= SECTION: General style for the filter container
+============================================
+*/
 .filter-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1); /* Un blanco translúcido */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el encabezado */
+/*
+=========================================
+= SECTION: Style for the header
+=========================================
+*/
 h3 {
   font-size: 1.5em;
   font-weight: 600;
-  color: #f8f8f2; /* Color claro que contrasta con el fondo oscuro */
+  color: #f8f8f2;
 }
 
-/* Estilo para el input de búsqueda */
+/*
+=============================================
+= SECTION: Style for the search input
+=============================================
+*/
 .search-input {
   flex: 2;
   padding: 10px;
@@ -28,11 +40,15 @@ h3 {
 }
 
 .search-input:focus {
-  border-color: #ffd700; /* Un tono dorado para resaltar el enfoque */
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); /* Sombra dorada suave alrededor del input */
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
-/* Estilo para los select (dropdown) */
+/*
+========================================
+= SECTION: Style for the select (dropdown)
+========================================
+*/
 .dropdown-filter {
   flex: 1;
   margin-left: 10px;
@@ -40,31 +56,70 @@ h3 {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #282a36; /* Un fondo oscuro que combina con el tema */
+  background-color: #282a36;
   color: #f8f8f2;
   transition: background-color 0.3s ease;
 }
 
 .dropdown-filter:focus {
-  background-color: #44475a; /* Un tono más claro al enfocarse */
+  background-color: #44475a;
 }
 
-/* Estilo para el botón de Buscar */
+/*
+============================================
+= SECTION: Style for the Search button
+============================================
+*/
 .filter-btn {
-  padding: 10px 20px;
+  text-decoration: none;
+  position: relative;
   border: none;
-  border-radius: 5px;
-  background-color: #ff5555; /* Un tono de rojo para llamar la atención */
-  color: #f8f8f2;
-  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  width: 9em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .filter-btn:hover {
-  background-color: #ff4444; /* Un tono de rojo un poco más oscuro al pasar el mouse */
-  transform: translateY(-2px); /* Efecto de levitación al pasar el mouse */
+  animation: ani 8s linear infinite;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.filter-btn:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+}
+
+.filter-btn:hover::before {
+  filter: blur(20px);
 }
 
 .filter-btn:active {
-  transform: translateY(0); /* Efecto de presión al hacer clic */
+  transform: translateY(0);
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }

@@ -10,6 +10,17 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Si deseas agregar un efecto al pasar el mouse, como un cambio de opacidad */
+.container-fluid .text-center a:hover {
+  opacity: 0.8;
+}
+
 .container-fluid {
   padding: 0;
   margin: 0;

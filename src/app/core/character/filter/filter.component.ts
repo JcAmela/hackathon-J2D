@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, Input } from '@angular/core';
+import { Component, EventEmitter, Output, Input, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Character } from '../../interfaces/interface';
 
 @Component({
@@ -6,18 +6,22 @@ import { Character } from '../../interfaces/interface';
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.css']
 })
-export class FilterComponent {
-  // Variables para los filtros y búsquedas
+export class FilterComponent implements AfterViewInit {
   searchTerm: string = '';
   statusFilter: string = '';
   speciesFilter: string = '';
   typeFilter: string = '';
   genderFilter: string = '';
 
-  @Input() characters: Character[] = [];  // Esta línea es la clave para la solución
-  @Output() filtered = new EventEmitter<Character[]>();
+  @Input() characters: Character[] = [];
+  @Output() filtered = new EventEmitter<{ characters: Character[], isEmpty: boolean }>();
 
-  // Método para filtrar los personajes
+  @ViewChild('searchInputElement', { static: false }) searchInput!: ElementRef;
+
+  ngAfterViewInit(): void {
+    this.searchInput.nativeElement.focus();
+  }
+
   filterCharacters(): void {
     const filteredCharacters = this.characters.filter(character => {
       return (!this.searchTerm || character.name.toLowerCase().includes(this.searchTerm.toLowerCase())) &&
@@ -27,7 +31,7 @@ export class FilterComponent {
              (!this.genderFilter || character.gender === this.genderFilter);
     });
 
-    // Emite los personajes filtrados para que el componente padre los use
-    this.filtered.emit(filteredCharacters);
+    const isFilterEmpty = !this.searchTerm && !this.statusFilter && !this.speciesFilter && !this.typeFilter && !this.genderFilter;
+    this.filtered.emit({ characters: filteredCharacters, isEmpty: isFilterEmpty });
   }
 }
