@@ -14,6 +14,7 @@ export class CharacterComponent implements OnInit {
   userInteracted: boolean = false;
 
   constructor(private characterService: CharacterService) { }
+  isLoading: boolean = true;
 
   ngOnInit(): void {
     this.loadCharacters();
@@ -23,8 +24,13 @@ export class CharacterComponent implements OnInit {
     this.characterService.getCharacters().subscribe(characters => {
       this.characters = characters;
       this.originalCharacters = [...characters];
+      this.isLoading = false;
+    }, error => {
+      console.error("Error al cargar los personajes:", error);
+      this.isLoading = false;
     });
   }
+
 
   onCharactersFiltered(data: { characters: Character[], isEmpty: boolean }): void {
     this.characters = data.characters;

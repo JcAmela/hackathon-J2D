@@ -1,9 +1,14 @@
 <div class="container-fluid">
-
-  <app-filter [characters]="originalCharacters" (filtered)="onCharactersFiltered($event)"></app-filter>
-
-  <app-paragraph [hideParagraph]="userInteracted"></app-paragraph>
-
-  <app-list [characters]="characters"></app-list>
-
+  <div *ngIf="isLoading" class="loader">
+    Loading
+    <span></span>
+  </div>
+  <div *ngIf="!isLoading">
+    <app-filter
+      [characters]="originalCharacters"
+      (filtered)="onCharactersFiltered($event)"
+    ></app-filter>
+    <app-paragraph [hideParagraph]="userInteracted"></app-paragraph>
+    <app-list [characters]="characters"></app-list>
+  </div>
 </div>
