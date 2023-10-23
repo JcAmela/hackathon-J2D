@@ -22,7 +22,7 @@ Sigue estos pasos para tenerlo funcionando:
 git clone https://github.com/JcAmela/hackathon-J2D.git
 cd hackathon-J2D
 npm install
-npm start
+ng serve
 ```
 
 ## 🛠 Herramientas y Tecnologías
