@@ -12,9 +12,9 @@ export class CharacterComponent implements OnInit {
   originalCharacters: Character[] = [];
   searchPerformed: boolean = false;
   userInteracted: boolean = false;
+  isLoading: boolean = true;
 
   constructor(private characterService: CharacterService) { }
-  isLoading: boolean = true;
 
   ngOnInit(): void {
     this.loadCharacters();
@@ -32,9 +32,18 @@ export class CharacterComponent implements OnInit {
   }
 
 
-  onCharactersFiltered(data: { characters: Character[], isEmpty: boolean }): void {
-    this.characters = data.characters;
+  onCharactersFiltered(data: { characters: Character[], isEmpty: boolean, userInteracted: boolean }): void {
+    if(data.userInteracted) {
+      this.characters = data.characters;
+      this.userInteracted = true;
+    } else {
+      this.characters = [...this.originalCharacters];
+      this.userInteracted = false;
+    }
     this.searchPerformed = !data.isEmpty;
-    this.userInteracted = !data.isEmpty;
   }
+
+
+
+
 }

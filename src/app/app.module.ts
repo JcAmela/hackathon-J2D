@@ -9,6 +9,8 @@ import { FilterComponent } from './core/character/filter/filter.component';
 import { ListComponent } from './core/character/list/list.component';
 import { FormsModule } from '@angular/forms';
 import { ParagraphComponent } from './core/character/paragraph/paragraph.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DetailComponent } from './core/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { ParagraphComponent } from './core/character/paragraph/paragraph.compone
       FilterComponent,
       ListComponent,
       ParagraphComponent,
+      DetailComponent
 
    ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,9 @@
 <div class="filter-container">
   <!-- Ensure using ngModel bidirectionally -->
-  <input type="text" #searchInputElement placeholder="Search by name..." [(ngModel)]="searchTerm" (keyup.enter)="filterCharacters()" class="search-input">
+  <input type="text" #searchInputElement placeholder="Search by name, status (live or dead), species, type, gender..." [(ngModel)]="searchTerm" (keyup.enter)="filterCharactersFromAPI()" class="search-input">
 
   <!-- Using ngModel instead of [value] and handling change with (change) -->
-  <select [(ngModel)]="statusFilter" (keyup.enter)="filterCharacters()" class="dropdown-filter">
+  <select [(ngModel)]="statusFilter" (keyup.enter)="filterCharactersFromAPI()" class="dropdown-filter">
     <option value="">All statuses</option>
     <option value="Alive">Alive</option>
     <option value="Dead">Dead</option>
@@ -11,7 +11,7 @@
   </select>
 
   <!-- Using ngModel bidirectionally for genderFilter -->
-  <select [(ngModel)]="genderFilter" (keyup.enter)="filterCharacters()" class="dropdown-filter">
+  <select [(ngModel)]="genderFilter" (keyup.enter)="filterCharactersFromAPI()" class="dropdown-filter">
     <option value="">All genders</option>
     <option value="Female">Female</option>
     <option value="Male">Male</option>
@@ -19,5 +19,5 @@
   </select>
 
   <!-- Search Button -->
-  <button (click)="filterCharacters()" class="filter-btn">Search</button>
+  <button (click)="filterCharactersFromAPI()" class="filter-btn">Search</button>
 </div>

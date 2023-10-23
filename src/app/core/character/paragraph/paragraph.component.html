@@ -1,3 +1,6 @@
 <div class="container-fluid" *ngIf="!hideParagraph">
-  <p>In the "Rick and Morty" API, there are multiple versions of certain characters like Rick, including variants such as Antenna Rick, Alien Rick, and others. I've filtered the results by name to display only the basic characters.</p>
+  <p>In the "Rick and Morty" API, there are multiple versions of certain characters like Rick. This includes variants such as Antenna Rick, Alien Rick, and others. I've filtered the results by name to display only the primary characters.</p>
+</div>
+<div class="container-fluid" *ngIf="hideParagraph">
+  <p>On the other hand, if you search for something specific using the search bar and/or filters, it will only show those results.</p>
 </div>

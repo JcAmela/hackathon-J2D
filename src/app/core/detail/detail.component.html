@@ -1,3 +1,48 @@
-<p>
-  detail works!
-</p>
+<!-- Loading message -->
+<div class="loading-wrapper" *ngIf="!character">
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="spinner"></div>
+    <p class="text-muted ml-3">Loading character details...</p>
+  </div>
+</div>
+
+<!-- Character content -->
+<div class="container mt-5" *ngIf="character">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <div class="card main-card">
+
+        <!-- Character image and name -->
+        <div class="character-header d-flex justify-content-center flex-column align-items-center">
+          <img [src]="character.image" alt="{{ character.name }}" class="img-fluid character-image">
+          <h1 class="character-name">{{ character.name }}</h1>
+          <p class="character-origin">{{ character.origin.name }}</p>
+        </div>
+
+        <!-- Character details -->
+        <div class="card detail-card">
+          <div class="card-body d-flex justify-content-around flex-wrap">
+            <div class="character-detail"><strong>Status:</strong> {{ character.status }}</div>
+            <div class="character-detail"><strong>Species:</strong> {{ character.species }}</div>
+            <div class="character-detail"><strong>Type:</strong> {{ character.type ? character.type : 'N/A' }}</div>
+            <div class="character-detail"><strong>Gender:</strong> {{ character.gender }}</div>
+            <div class="character-detail"><strong>Current Location:</strong> {{ character.location.name }}</div>
+        </div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center pb-5">
+              <button class="button" (click)="goBackToCharacterComponent()">
+                Return
+                <div class="hoverEffect">
+                  <div></div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

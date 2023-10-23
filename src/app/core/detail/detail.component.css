@@ -1,0 +1,161 @@
+/* ==========================
+   Loading Wrapper Styles
+   ========================== */
+   .loading-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ==========================
+     Spinner Animation Styles
+     ========================== */
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #333;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* ==========================
+     Main Card Styles
+     ========================== */
+  .main-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* ==========================
+     Character Header Styles
+     ========================== */
+  .character-header {
+    background-color: #02E1FF;
+    padding: 2rem 0;
+    position: relative;
+  }
+
+  .character-image {
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .character-name {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .character-origin {
+    font-size: 1rem;
+    color: #777;
+  }
+
+  /* ==========================
+     Detail Card Styles
+     ========================== */
+  .detail-card {
+    border: none;
+    padding: 1rem;
+  }
+
+  .character-detail {
+    flex: 1 1 33%;
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+  }
+
+  .character-detail:hover {
+    background-color: #e4e4e4;
+  }
+
+    /* ==========================
+     Return Button Styles
+     ========================== */
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+
+  .button:active {
+    transform: scale(0.97);
+  }
+
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .hoverEffect div {
+    background: rgb(222,0,75);
+    background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+
+  .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  @keyframes effect {
+
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
