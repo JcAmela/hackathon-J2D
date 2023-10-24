@@ -43,10 +43,10 @@ ng serve
 
 ## 🏆 Calidad del Código
 
-<div align="center">
-  
 A continuación, puedes consultar el estado actual de nuestro proyecto, evaluado por SonarCloud:
 
+<div align="center">
+  
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=JcAmela_hackathon-J2D)](https://sonarcloud.io/summary/new_code?id=JcAmela_hackathon-J2D)
 
 ## 🌟 Agradecimientos
