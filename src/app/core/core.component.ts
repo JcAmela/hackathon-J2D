@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CoreComponent  {
 
-  constructor() { }
+
 
   reloadPage(event: Event): void {
     event.preventDefault();
