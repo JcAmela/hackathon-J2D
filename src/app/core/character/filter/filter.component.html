@@ -1,23 +1,23 @@
 <div class="filter-container">
-  <!-- Ensure using ngModel bidirectionally -->
-  <input type="text" #searchInputElement placeholder="Search by name, status (live or dead), species, type, gender..." [(ngModel)]="searchTerm" (keyup.enter)="filterCharactersFromAPI()" class="search-input">
-
-  <!-- Using ngModel instead of [value] and handling change with (change) -->
+  <input type="text" #searchInputElement placeholder="Search by name, status (live or dead), species, type, gender..."
+    [(ngModel)]="searchTerm" (keyup.enter)="filterCharactersFromAPI()" class="search-input" />
   <select [(ngModel)]="statusFilter" (keyup.enter)="filterCharactersFromAPI()" class="dropdown-filter">
     <option value="">All statuses</option>
     <option value="Alive">Alive</option>
     <option value="Dead">Dead</option>
     <option value="unknown">Unknown</option>
   </select>
-
-  <!-- Using ngModel bidirectionally for genderFilter -->
   <select [(ngModel)]="genderFilter" (keyup.enter)="filterCharactersFromAPI()" class="dropdown-filter">
     <option value="">All genders</option>
     <option value="Female">Female</option>
     <option value="Male">Male</option>
     <option value="Genderless">Genderless</option>
   </select>
-
-  <!-- Search Button -->
   <button (click)="filterCharactersFromAPI()" class="filter-btn">Search</button>
+</div>
+
+<div class="container">
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
 </div>

@@ -1,6 +1,17 @@
-app-filter{
+/*
+============================================
+= SECTION: Style for the Filter component
+============================================
+*/
+app-filter {
   margin: 30px;
 }
+
+/*
+============================================
+= SECTION: Style for the Loader component
+============================================
+*/
 .loader {
   position: absolute;
   top: 50%;
@@ -59,6 +70,11 @@ app-filter{
   box-shadow: 0 0 20px 5px #0066ff;
 }
 
+/*
+============================================
+= SECTION: Keyframe Animations
+============================================
+*/
 @keyframes animateC {
   0% {
     transform: rotate(0deg);
