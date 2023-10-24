@@ -34,9 +34,9 @@ npm install
 ng serve
 ```
 🛠 Herramientas y Tecnologías
-Framework Principal: Angular 🅰️
-Lenguaje de Programación: TypeScript 📘
-Diseño y Estilo: Bootstrap 🎨
+-Framework Principal: Angular 🅰️
+-Lenguaje de Programación: TypeScript 📘
+-Diseño y Estilo: Bootstrap 🎨
 <div align="center">
 🌟 Agradecimientos
 Un agradecimiento especial a Jump 2 Digital por brindarnos la oportunidad de crear, innovar y aprender durante esta hackathon. 🚀
