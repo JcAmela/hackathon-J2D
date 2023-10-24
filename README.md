@@ -2,7 +2,7 @@
 
 ## 🌌 Rick and Morty - Hackathon Jump 2 Digital 🚀
 
-![Banner](./src/assets/banner%20github%20rickAndMorty.avif)
+![Banner](./src/assets/rickAndMorty.avif)
 
 🌠 **Descubre el universo de Rick and Morty.**
 
