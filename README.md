@@ -2,7 +2,7 @@
 
 ## 🌌 Rick and Morty - Hackathon Jump 2 Digital 🚀
 
-![Banner](./src/assets/banner%20github%20hackathon.png)
+![Banner](./src/assets/rickAndMorty.avif)
 
 🌠 **Descubre el universo de Rick and Morty.**
 
@@ -33,12 +33,19 @@ cd hackathon-J2D
 npm install
 ng serve
 ```
-🛠 Herramientas y Tecnologías
-Framework Principal: Angular 🅰️
-Lenguaje de Programación: TypeScript 📘
-Diseño y Estilo: Bootstrap 🎨
+## 🛠 Herramientas y Tecnologías
+
+| Herramienta                | Tecnología                   | 
+|----------------------------|------------------------------| 
+| Framework Principal        | Angular 🅰️                  | 
+| Lenguaje de Programación   | TypeScript 📘                | 
+| Diseño y Estilo            | Bootstrap 🎨                 |
+
 <div align="center">
-🌟 Agradecimientos
+
+## 🌟 Agradecimientos
+
 Un agradecimiento especial a Jump 2 Digital por brindarnos la oportunidad de crear, innovar y aprender durante esta hackathon. 🚀
 
 </div>
+
