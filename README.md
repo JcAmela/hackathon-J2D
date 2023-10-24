@@ -21,7 +21,7 @@
 - ⏳ **Indicadores de Carga**: Garantiza una experiencia fluida al mostrar una interfaz de carga durante la obtención de datos.
 - 🖱️ **Interacción Usuario**: La aplicación detecta y responde según las interacciones del usuario con los filtros.
     - 📝 **Mensajes Dinámicos**: Dependiendo de si el usuario ha utilizado el filtro o no, se muestra un mensaje adecuado. Por defecto, el mensaje informa sobre la naturaleza de los personajes mostrados. Si se ha utilizado el filtro, el mensaje aclara que los resultados reflejan la búsqueda del usuario.
-🌌 **Selección Curada de Personajes**: Al inicio, la aplicación presenta una selección cuidadosamente elegida de los personajes icónicos del universo de Rick and Morty, en lugar de mostrar directamente todos los resultados de la API.
+- 🌌 **Selección Curada de Personajes**: Al inicio, la aplicación presenta una selección cuidadosamente elegida de los personajes icónicos del universo de Rick and Morty, en lugar de mostrar directamente todos los resultados de la API.
 
 ## 🚀 Empezando
 
