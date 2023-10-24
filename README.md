@@ -42,4 +42,3 @@ Diseño y Estilo: Bootstrap 🎨
 Un agradecimiento especial a Jump 2 Digital por brindarnos la oportunidad de crear, innovar y aprender durante esta hackathon. 🚀
 
 </div>
-```
