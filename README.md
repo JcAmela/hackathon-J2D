@@ -16,7 +16,7 @@
 
 ## 🚀 Empezando
 
-Sigue estos pasos para tenerlo funcionando:
+Sigue estos pasos para probarlo:
 
 ```bash
 git clone https://github.com/JcAmela/hackathon-J2D.git
