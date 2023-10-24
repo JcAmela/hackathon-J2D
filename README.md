@@ -41,11 +41,12 @@ ng serve
 | Lenguaje de Programación   | TypeScript 📘                | 
 | Diseño y Estilo            | Bootstrap 🎨                 |
 
-<div align="center">
+## 🏆 Calidad del Código
+
+A continuación, puedes consultar el estado actual de nuestro proyecto, evaluado por SonarCloud:
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=JcAmela_hackathon-J2D)](https://sonarcloud.io/summary/new_code?id=JcAmela_hackathon-J2D)
 
 ## 🌟 Agradecimientos
 
 Un agradecimiento especial a Jump 2 Digital por brindarnos la oportunidad de crear, innovar y aprender durante esta hackathon. 🚀
-
-</div>
-
