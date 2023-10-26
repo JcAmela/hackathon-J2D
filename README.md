@@ -12,8 +12,8 @@
 
 ## 🔍 Características Principales
 
-- ✅ 📜 **Buscar Personajes**: Simplemente introduce el nombre y encuentra a tus personajes favoritos al instante.
-- ✅ 📘 **Información Detallada**: Profundiza en la historia, origen y características únicas de cada personaj.e.
+- ✅ 📜 **Buscar Personajes**: introduce el nombre y encuentra a tus personajes favoritos al instante.
+- ✅ 📘 **Información Detallada**: Profundiza en el origen y características únicas de cada personaje.
 - ✅ 🎨 **Interfaz Amigable**: Una experiencia de usuario fluida, con un diseño visualmente atractivo y fácil navegación.
 
 ## 💡 Funcionalidades Especiales
