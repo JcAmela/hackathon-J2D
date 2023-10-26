@@ -1,11 +1,3 @@
-/*
-============================================
-= SECTION: Style for the Filter component
-============================================
-*/
-app-filter {
-  margin: 30px;
-}
 
 /*
 ============================================
@@ -59,7 +51,6 @@ app-filter {
 }
 
 .loader span::before {
-  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
